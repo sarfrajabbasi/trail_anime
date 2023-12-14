@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+:root{
+    --leaf:url("https://cdn1.iconfinder.com/data/icons/addiction-drugs-2/24/Marijuana_addiction_drug_fun_Leaf-512.png");
+    --heart:url('https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png');
+    --shit:url('https://cdn4.iconfinder.com/data/icons/emoji-2-5/64/_shit_poo_face_emoji-512.png');
+    --box:url('https://cdn4.iconfinder.com/data/icons/treasure-hunter-2/500/box_coins_gold_treasure_ancient_wealth_old_pirate_wooden-512.png');
+    --gift:url('https://cdn4.iconfinder.com/data/icons/free-color-christmas-icons/24/Present_Box_1-512.png');
+    --kiss:url('https://cdn3.iconfinder.com/data/icons/emoji-1-4/64/_kiss_emoji_smiley-512.png');
+    --alien:url('https://cdn1.iconfinder.com/data/icons/space-travel-flat/340/space_astronomy_universe_galaxy_alien_fiction_ufo_monster-512.png');
+    --helicopter:url('https://cdn3.iconfinder.com/data/icons/transport-204/64/Helicopter-aircraft-transportation-flight-vehicle-512.png');
+    --figther-jet:url('https://cdn2.iconfinder.com/data/icons/stop-war-1/64/War_F_jet-plane-airplane-aircraft-boom-512.png');
+    --snow:url('https://cdn3.iconfinder.com/data/icons/3d-weather-forecast/256/15_cuaca.png');
+    --snowman:url('https://cdn0.iconfinder.com/data/icons/choco/512/7246596_cold_winter_snowman.png');
+    --drone:url('https://cdn0.iconfinder.com/data/icons/gadgets-3d/512/DRONE.png')
+}
+
+span{
+    background: var(--heart);
+    background-size: cover;
+    width:100px;
+    height: 100px;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: heartAnime 20s linear;
+}
+.fighter{
+    background: var(--leaf);
+    background-size: cover;
+    width:100px;
+    height: 100px;
+    margin: 100px;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: heartAnime 20s linear;
+}
+@keyframes heartAnime {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
